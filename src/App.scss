@@ -20,3 +20,25 @@ $secondary-color: #EF7B00;
 $white-color: white;
 $black-color: #000;
 $tertiary-color: #813588;
+
+#footer {
+  ul {
+      color: $white-color;
+  }                                                                                             
+  h2 {
+      color: $secondary-color;
+      font-size: 18px;
+  }
+  address {
+      color: $white-color;
+  }
+  a {
+      text-decoration: none;
+      color: $white-color;
+      &:hover {
+          color: $secondary-color;
+      }
+
+  }
+
+}
