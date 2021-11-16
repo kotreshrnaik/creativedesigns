@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
-import FooterLogo from "../Images/logo4.png";
+import FooterLogo from "../Images/footer-logo.png";
 
 
 
@@ -10,7 +10,7 @@ const Footer = () => {
       <div id="footer" className="pt-2 pb-2 pt-md-2 pb-md-2 bg-dark text-light">
         <Container>
           <Row>
-            <Col md={3}>
+            <Col md={3} className="align-self-center">
               <div className="text-center">
                 <Image src={FooterLogo} alt="" className="img-fluid" />
               </div>

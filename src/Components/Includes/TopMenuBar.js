@@ -5,26 +5,26 @@ import {
   Navbar,
   Image,
 } from "react-bootstrap";
-import Logo from "../../Images/logo2.png";
+import Logo from "../Images/logo.png";
 
 const TopMenuBar = () => {
   return (
-    <div>
-      <div className="sticky-top">
+    <>
+      <div className="sticky-top shadow" id="navbar">
         <Navbar
           collapseOnSelect
           expand="lg"
-          bg="light"
+          bg="white"
           variant="light"
           id="navbar"
         >
           <Container>
-            <Navbar.Brand href="/">
+            <Navbar.Brand className="d-block d-md-none">
               <Image src={Logo} className="img-fluid" alt="Logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="ms-auto">
+              <Nav className="ms-auto me-auto">
                 <Nav.Link href="/">HOME</Nav.Link>
                 <Nav.Link href="/about">ABOUT US</Nav.Link>
                 <Nav.Link href="/services">SERVICES</Nav.Link>
@@ -32,8 +32,8 @@ const TopMenuBar = () => {
                   <Image src={Logo} className="img-fluid" alt="Logo" />
                 </Navbar.Brand>
                 <Nav.Link href="/portfolio">PORTFOLIO</Nav.Link>
-                <Nav.Link href="/portfolio">PRICING</Nav.Link>
-                <Nav.Link href="/portfolio">CONTACT US</Nav.Link>
+                <Nav.Link href="/pricing">PRICING</Nav.Link>
+                <Nav.Link href="/contact">CONTACT US</Nav.Link>
               </Nav>
               {/* <Nav>
               <Nav.Link href="#deets">More deets</Nav.Link>
@@ -45,7 +45,7 @@ const TopMenuBar = () => {
           </Container>
         </Navbar>
       </div>
-    </div>
+    </>
   );
 };
 
