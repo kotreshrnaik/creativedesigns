@@ -76,7 +76,7 @@ const Footer = () => {
                 <p className="text-center text-light m-0 pt-2 pb-1">
                   Copy Rights reserved by Creative Desgns. Developed by{" "}
                   <a href="http://shanthaswebz.com" target="_blank">
-                    Shanthas Webz
+                    LDCB.
                   </a>
                 </p>
               </Col>

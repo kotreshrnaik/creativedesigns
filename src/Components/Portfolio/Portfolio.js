@@ -39,10 +39,7 @@ const Portfolio = () => {
       </div>
       <div id="portfolio" className="pt-3 pb-3 pt-md-5 pb-md-5">
         <Container>
-          <div
-            className="p-2 text-center d-flex flex-row justify-content-center"
-            
-          >
+          <div className="p-2 text-center d-flex flex-row justify-content-center">
             <div className="m-1">
               <TagButton name="all" handlesettag={setTag} />
             </div>
@@ -59,7 +56,7 @@ const Portfolio = () => {
           <SRLWrapper>
             <Row>
               {filteredImages.map((item) => (
-                <Col md={4} key={item.id}>
+                <Col md={3} key={item.id}>
                   <div className="m-1 text-center">
                     <a href={item.imgName}>
                       <Image
