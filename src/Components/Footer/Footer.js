@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
-import FooterLogo from "../Images/footer-logo.png";
+import { Link } from "react-router-dom";
+import FooterLogo from "../Images/footer-logo-1.png";
 
 
 
@@ -20,19 +21,19 @@ const Footer = () => {
                 <h2 className="pt-2 pb-2">Quick Links</h2>
                 <ul>
                   <li>
-                    <a href="/">Latest Events</a>
+                    <Link to="/">Latest Events</Link>
                   </li>
                   <li>
-                    <a href="/">Terms and conditions</a>
+                    <Link to="/">Terms and conditions</Link>
                   </li>
                   <li>
-                    <a href="/">Privacy Policy</a>
+                    <Link to="/">Privacy Policy</Link>
                   </li>
                   <li>
-                    <a href="/">Career</a>
+                    <Link to="/">Career</Link>
                   </li>
                   <li>
-                    <a href="/">Contact Us</a>
+                    <Link to="/">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -41,13 +42,13 @@ const Footer = () => {
               <h2 className="pt-2 pt-2">Latest Posts</h2>
               <ul>
                 <li>
-                  <a href="/"></a>Lorem Ipsum
+                  <Link to="/"></Link>Lorem Ipsum
                 </li>
                 <li>
-                  <a href="/"></a>Lorem Ipsum
+                  <Link to="/"></Link>Lorem Ipsum
                 </li>
                 <li>
-                  <a href="/"></a>Lorem Ipsum
+                  <Link to="/"></Link>Lorem Ipsum
                 </li>
                 
               </ul>
@@ -58,13 +59,13 @@ const Footer = () => {
               </h2>
               <ul>
                 <li>
-                  <a href="/"></a>Lorem Ipsum
+                  <Link to="/"></Link>Lorem Ipsum
                 </li>
                 <li>
-                  <a href="/"></a>Lorem Ipsum
+                  <Link to="/"></Link>Lorem Ipsum
                 </li>
                 <li>
-                  <a href="/"></a>Lorem Ipsum
+                  <Link to="/"></Link>Lorem Ipsum
                 </li>
                 
               </ul>
@@ -75,9 +76,9 @@ const Footer = () => {
               <Col md={12}>
                 <p className="text-center text-light m-0 pt-2 pb-1">
                   Copy Rights reserved by Creative Desgns. Developed by{" "}
-                  <a href="http://shanthaswebz.com" target="_blank">
+                  <Link to="http://shanthaswebz.com" target="_blank">
                     LDCB.
-                  </a>
+                  </Link>
                 </p>
               </Col>
             </Row>

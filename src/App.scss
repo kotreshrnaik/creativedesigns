@@ -27,12 +27,20 @@ $tertiary-color: #813588;
 
 #navbar {
     .nav-link {
-        padding: 20px 40px;
+        padding: 30px 40px;
         align-items: center;
         color: $secondary-color;
         font-weight: 600;
         &:hover {
             color: $primary-color;
+        }
+    }
+    .dropdown-item {
+        color: $secondary-color;
+        font-weight: 600;
+        &:hover {
+            color: $primary-color;
+            background-color: $white-color;
         }
     }
 }

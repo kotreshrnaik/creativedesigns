@@ -14,14 +14,14 @@ const Home = () => {
           <Row className="justify-content-center">
             <Col md={10}>
               <h4 className="text-center text-white fw-bold">
-                At THE CREATIVE DESIGNERS we are a team of architects and
+                At THE CREATIVE DESIGNS we are a team of architects and
                 designers working holistically on design and execution.
               </h4>
               <p className="text-center text-white">
                 Our focus is on creating timeless, classic spaces paying close
                 attention to evolving our work with our client’s needs. We have
                 three main areas in our practice, interior design, furniture and
-                turnkey projects. Creative Interiors works sustainably with the
+                turnkey projects. Creative Design works sustainably with the
                 best materials and craftsman to deliver our signature eclectic
                 style locally from our workshop in Bangalore.
               </p>

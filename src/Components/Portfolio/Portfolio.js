@@ -4,15 +4,21 @@ import { SRLWrapper } from "simple-react-lightbox";
 import Image1 from "../Images/recentworks/image-1.png";
 import Image2 from "../Images/recentworks/image-2.png";
 import Image3 from "../Images/recentworks/image-3.png";
+import Image4 from "../Images/constructions/image-2.png";
+import Image5 from "../Images/constructions/image-3.png";
+import Image6 from "../Images/constructions/image-4.png";
 
 const Portfolio = () => {
   const images = [
-    { id: 1, imgName: Image1, alt: "", tag: "one" },
-    { id: 2, imgName: Image2, alt: "", tag: "two" },
-    { id: 3, imgName: Image3, alt: "", tag: "three" },
-    { id: 4, imgName: Image1, alt: "", tag: "one" },
-    { id: 5, imgName: Image2, alt: "", tag: "two" },
-    { id: 6, imgName: Image3, alt: "", tag: "three" },
+    { id: 1, imgName: Image1, alt: "", tag: "Interior-design" },
+    { id: 2, imgName: Image2, alt: "", tag: "Interior-design" },
+    { id: 3, imgName: Image3, alt: "", tag: "Interior-design" },
+    { id: 4, imgName: Image1, alt: "", tag: "Interior-design" },
+    { id: 5, imgName: Image2, alt: "", tag: "Interior-design" },
+    { id: 6, imgName: Image3, alt: "", tag: "Interior-design" },
+    { id: 4, imgName: Image4, alt: "", tag: "Constructions" },
+    { id: 5, imgName: Image5, alt: "", tag: "Constructions" },
+    { id: 6, imgName: Image6, alt: "", tag: "Constructions" },
   ];
 
   const [tag, setTag] = useState("one");
@@ -44,14 +50,14 @@ const Portfolio = () => {
               <TagButton name="all" handlesettag={setTag} />
             </div>
             <div className="m-1">
-              <TagButton name="one" handlesettag={setTag} />
+              <TagButton name="Interior-design" handlesettag={setTag} />
             </div>
             <div className="m-1">
-              <TagButton name="two" handlesettag={setTag} />
+              <TagButton name="Constructions" handlesettag={setTag} />
             </div>
-            <div className="m-1">
+            {/* <div className="m-1">
               <TagButton name="three" handlesettag={setTag} />
-            </div>
+            </div> */}
           </div>
           <SRLWrapper>
             <Row>

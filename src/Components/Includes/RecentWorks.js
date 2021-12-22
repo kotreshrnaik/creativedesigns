@@ -26,7 +26,7 @@ const RecentWorks = () => {
             <Row>
                 {
                     recentWorks.map( (item) => (
-                        <Col md={3} key={item.id}>
+                        <Col md={3} xs={6} key={item.id}>
                             <div className="text-center m-1">
                                 <Image src={item.ImgUrl} alt={item.alt} className="img-fluid" />
                             </div>

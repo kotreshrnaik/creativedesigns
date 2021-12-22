@@ -1,11 +1,7 @@
 import React from "react";
-import {
-  Container,
-  Nav,
-  Navbar,
-  Image,
-} from "react-bootstrap";
-import Logo from "../Images/logo.png";
+import { Container, Nav, Navbar, Image, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Logo from "../Images/logo-1.png";
 
 const TopMenuBar = () => {
   return (
@@ -25,15 +21,39 @@ const TopMenuBar = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ms-auto me-auto">
-                <Nav.Link href="/">HOME</Nav.Link>
-                <Nav.Link href="/about">ABOUT US</Nav.Link>
-                <Nav.Link href="/services">SERVICES</Nav.Link>
-                <Navbar.Brand href="/">
-                  <Image src={Logo} className="img-fluid" alt="Logo" />
+                <Nav.Link as={Link} to="/creativedesigns">
+                  HOME
+                </Nav.Link>
+                <Nav.Link as={Link} to="/about">
+                  ABOUT US
+                </Nav.Link>
+                <NavDropdown title="SERVICES" id="services">
+                  <NavDropdown.Item as={Link} to="/interior-design">
+                    Interior Design
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item as={Link} to="/constructions">
+                    Constructions
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <Navbar.Brand
+                  as={Link}
+                  to="/"
+                  className="d-none d-sm-none d-md-block text-center m-0"
+                >
+                  <div className="text-center">
+                    <Image src={Logo} className="img-fluid" alt="Logo" />
+                  </div>
                 </Navbar.Brand>
-                <Nav.Link href="/portfolio">PORTFOLIO</Nav.Link>
-                <Nav.Link href="/pricing">PRICING</Nav.Link>
-                <Nav.Link href="/contact">CONTACT US</Nav.Link>
+                <Nav.Link as={Link} to="/portfolio">
+                  PORTFOLIO
+                </Nav.Link>
+                <Nav.Link as={Link} to="/pricing">
+                  PRICING
+                </Nav.Link>
+                <Nav.Link as={Link} to="/contact">
+                  CONTACT US
+                </Nav.Link>
               </Nav>
               {/* <Nav>
               <Nav.Link href="#deets">More deets</Nav.Link>

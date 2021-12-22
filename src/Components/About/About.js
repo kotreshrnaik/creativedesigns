@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Image, Row } from "react-bootstrap";
+import { Card, Col, Container, Image, Row } from "react-bootstrap";
 import Slide1 from "../Images/about/about.png";
 
 const About = () => {
@@ -56,7 +56,7 @@ const About = () => {
           </Row>
         </Container>
       </div>
-      <div className="pt-3 pb-3 pt-md-5 pb-md-5">
+      <div className="pt-3 pb-3 pt-md-5 pb-md-5 bg-light">
         <Container>
           <Row className="justify-content-center">
             <Col md={6}>
@@ -85,6 +85,72 @@ const About = () => {
                   of design with a “turn-key” approach through the services
                   offered.
                 </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="pt-3 pb-3 pt-md-5 pb-md-5">
+        <Container>
+          <h2 className="text-center text-secondary pt-2 pb-2">Our Team</h2>
+          
+          <Row className="justify-content-center m-1">
+            <Col ms={10}>
+              <div className="">
+                <p className="text-center">
+                  At Creative Interiors, our integrated interior design team
+                  collaborates throughout the design process for each individual
+                  project. All of our team member bring a unique skill set and
+                  perspective to the final design solution. Our hands-on
+                  approach to design ensures that our team utilizes their skills
+                  and creative vision to produce memorable, unique, and timeless
+                  designs for our clients.
+                </p>
+                <p className="text-center">
+                  Our trusted design team is composed of designers with a wide
+                  range of experience and expertise. The Creative Interiors Team
+                  continues to work closely with our clients to create
+                  one-of-a-kind design solutions tailored specifically to each
+                  client.
+                </p>
+              </div>
+            </Col>
+          </Row>
+          <Row className="justify-content-center pt-2 pb-2 m-1">
+            <Col md={4}>
+              <div className="">
+                <Card className="shadow">
+                  <Card.Body>
+                    <Card.Title className="text-center text-primary fw-bold">
+                      Name
+                    </Card.Title>
+                    <Card.Subtitle className="mb-2 text-dark text-center">
+                      Director
+                    </Card.Subtitle>
+                    <Card.Text className="text-center">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </div>
+            </Col>
+            <Col md={4}>
+              <div className="">
+                <Card className="shadow">
+                  <Card.Body>
+                    <Card.Title className="text-center text-primary fw-bold">
+                      Name
+                    </Card.Title>
+                    <Card.Subtitle className="mb-2 text-dark text-center">
+                      Director
+                    </Card.Subtitle>
+                    <Card.Text className="text-center">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
               </div>
             </Col>
           </Row>
